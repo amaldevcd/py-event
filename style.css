@@ -1,0 +1,29 @@
+body{
+
+}
+header{
+    background-color: aqua;
+}
+
+
+
+
+div
+{
+    
+  text-align: right;
+  float:right;
+}
+
+button
+{
+    color:red;
+    background-color: royalblue;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 100px;
+    height:100px;
+}
