@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&display=swap');
+.welcome_img
+{
+    padding-top: 20%;
+    width:85%;
+}
+.load_text 
+{
+    padding-top: 45%;
+    text-align: center;
+    font-family:Balsamiq Sans;
+}
+.load_text h1
+{
+    font-size: 100px;
+    font-family:Balsamiq Sans;
+    color: orange;
+}
+
+.load_text p{
+    font-size: 1.5rem;
+}
+.btn
+{
+    font-size: 20px  !important;
+}
+
