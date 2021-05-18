@@ -6,3 +6,6 @@ def index(request):
 
 def theme(request):
     return render(request,"eventso/theme.html")
+
+def signuptheme(request):
+    return render(request,"eventso/signuptheme.html")
