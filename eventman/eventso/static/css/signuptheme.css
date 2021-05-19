@@ -59,6 +59,7 @@ select.form-control {
 .form-control:focus {
     box-shadow: none;
 }
-.load_text h3{
-    
+
+input {
+    max-width: 10em !important;
 }
