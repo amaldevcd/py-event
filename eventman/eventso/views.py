@@ -1,3 +1,4 @@
+from eventso.models import Post
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 
@@ -6,8 +7,9 @@ def index(request):
     return render(request,"eventso/index.html")
 
 @login_required
-def theme(request):
-    return render(request,"eventso/theme.html")
+def home(request):
+    posts = Post.objects.all()
+    return render(request,"eventso/home.html",{'posts':posts})
 
 def signuptheme(request):
     return render(request,"eventso/signuptheme.html")
