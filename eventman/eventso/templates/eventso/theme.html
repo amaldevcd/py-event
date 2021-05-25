@@ -40,87 +40,14 @@
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="header_img"> <img src="{% static '/images/img1.jpg' %}" alt=""> </div>
+            <h6 class="ml-2">{{ user.get_username }} </h6>&nbsp;&nbsp;
+        <div class="header_img"><img src="{% static '/images/img1.jpg' %}" alt=""> </div>
         </header>
         <div class="l-navbar" id="nav-bar">
             <nav class="nav">
                 <div> <a href="#" class="nav_logo" style="text-decoration: none;"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">&nbsp;&nbsp;Eventso</span> </a>
-                    <div class="nav_list">  <a href="#" class="nav_link"> <i class='bi bi-person-circle'></i> <span class="nav_name">Users</span> </a> <a href="#" class="nav_link"> <i class="bi bi-calendar-event"></i> <span class="nav_name">Events</span> </a> </div>
-                </div> <a href="#" class="nav_link" style="text-decoration: none;"> <i class='bi bi-box-arrow-left'></i> <span class="nav_name">SignOut</span> </a>
+                    <div class="nav_list">  <a href="#" class="nav_link"> <i class='bi bi-person-circle'></i> <span class="nav_name">Users</span> </a> <a href="#" class="nav_link"> <i class="bi bi-calendar-event"></i> <span class="nav_name">Events</span> </a> <a href="#" class="nav_link"> <i class='bi bi-calendar-plus'></i> <span class="nav_name">Host Event</span> </a></div>
+                </div> <a href="{% url 'logout' %}" class="nav_link" style="text-decoration: none;"> <i class='bi bi-box-arrow-left'></i> <span class="nav_name">SignOut</span> </a>
             </nav>
         </div>
         <!--Container Main start-->

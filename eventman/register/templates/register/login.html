@@ -1,18 +1,19 @@
 {% extends 'eventso/signuptheme.html' %}
 {% load crispy_forms_tags %}
 {% block heading %}
-Create an Account
+Log In
 {% endblock %}
 {% block content %}
 <form  method="POST">
 
     {% csrf_token %}
     <div class="row ">
-        <div class="form-group col-md-12">
-            {{ form|crispy }}
+        <div class="form-group col-md-6">
+            {{ form | crispy }}
         </div>
-        <div class="form-group col-lg-12 mx-auto mb-0">
-           <button type="submit" class="btn btn-primary">Create an Account</button>
+        <div class="form-group col-lg-12 mx-auto mb-0 mt-3">
+            
+           <button type="submit" class="btn btn-primary mt-3">Login</button>
         </div>
 
         <!-- Divider Text -->
@@ -26,7 +27,7 @@ Create an Account
 
         <!-- Already Registered -->
         <div class="text-center w-100">
-            <p class="text-muted font-weight-bold">Already Registered? <a href="{% url 'login' %}" class="text-primary ml-2">Login</a></p>
+            <p class="text-muted font-weight-bold">Not an existing user? <a href="{% url 'register' %}" class="text-primary ml-2">Sign Up</a></p>
         </div>
 
     </div>

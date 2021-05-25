@@ -41,7 +41,8 @@
         <!-- For Demo Purpose -->
         <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
             <img src="{% static '/images/Login.gif' %}" alt="" class="img-fluid mb-3 d-none d-md-block">
-            <h1>Create an Account</h1>
+            <h1>  {% block heading %}
+                {% endblock %}</h1>
             <p class="font-italic text-muted mb-0">Register for amazing event updates</p>
             <p class="font-italic text-muted"> <a href="" class="text-muted">
                 <u>Eventso</u></a>

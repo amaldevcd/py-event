@@ -8,15 +8,15 @@ from django.forms import fields, widgets
 
 
 class RegisterForm(UserCreationForm):
-    first_name = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control', 'style':'max-height: 1em','autofocus':'true'}))
-    last_name = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control','style':'max-height: 1em'}))
-    email = forms.EmailField(widget=forms.EmailInput(attrs={'class':'form-control','style':'max-height: 1em'}))
+    first_name = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control', 'style':'max-height: 1em','autofocus':'true', 'style':'width: 70%'}))
+    last_name = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control','style':'max-height: 1em', 'style':'max-width: 10em'}))
+    email = forms.EmailField(widget=forms.EmailInput(attrs={'class':'form-control','style':'max-height: 1em', 'style':'max-width: 10em'}))
 
     class Meta:
         model = User
         fields = ('first_name','last_name','username','email','password1', 'password2')
         widgets = {
-            'password1':forms.PasswordInput(attrs={'class':'form-control','style':'max-height: 1em'}),
-            'password2':forms.PasswordInput(attrs={'class':'form-control','style':'max-height: 1em'}),
-            'username':forms.TextInput(attrs={'class':'form-control','style':'max-height: 1em'}),     
+            'password1':forms.PasswordInput(attrs={'class':'form-control','style':'max-height: 1em', 'style':'max-width: 10em'}),
+            'password2':forms.PasswordInput(attrs={'class':'form-control','style':'max-height: 1em', 'style':'max-width: 10em'}),
+            'username':forms.TextInput(attrs={'class':'form-control','style':'max-height: 1em', 'style':'max-width: 10em'}),     
         }
