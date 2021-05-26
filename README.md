@@ -7,8 +7,6 @@ Long Description about project. This project do that. This project is awesome...
 3. TOM GEORGE [https://github.com/tomgeorge-tgp]
 ## Team Id
 BFH/recLUWti6CBFCEF99/2021
-## Link to product walkthrough
-
 ## How it Works ?
 1. Explaining the working of project
 2. Embed video of project demo
