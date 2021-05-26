@@ -21,6 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
+
 urlpatterns = [
     path('eventso/',include('eventso.urls')),
     path('eventso/register', v.register,name='register'),
