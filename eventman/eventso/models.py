@@ -8,6 +8,7 @@ class Post(models.Model):
     short=models.CharField(max_length=50)
     content=models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
+    event_date =models.DateTimeField(blank=True, null=True)
     image = models.ImageField(default="default.jpg",upload_to='event_banner')
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
